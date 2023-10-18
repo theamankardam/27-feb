@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 4 | JavaScript DOM (Methods of DOM - part 3) | 27 Feb</title>
+</head>
+
+<body>
+
+    <!-- Normal HTML -->
+    <h1>Hello Bacho = PWSKILLS</h1>
+    <p id="js"></p>
+    <button ondblclick="hey()" id="jss">Submit</button>
+
+
+
+    <!-- JavaScript -->
+    <script>
+
+        document.addEventListener("mouseenter", hello)
+        function hello() {
+            document.getElementById("js").innerText = "Namaste bacho";
+        }
+
+        function hey() {
+            document.getElementById("jss").innerText = "namaste";
+            document.getElementById("jss").style.color = "red";
+            document.getElementById("jss").style.backgroundColor = "black";
+            document.getElementById("jss").style.padding = "16px";
+            document.getElementById("jss").style.border = "2px solid yellow";
+        }
+
+
+    </script>
+
+</body>
+
+</html>
